@@ -42,6 +42,7 @@ header img {
   margin-left: 10px;
   align-content: center;
   align-items: center;
+  border: 2px solid var(--secondary-color);
 }
 
 header h1 {
