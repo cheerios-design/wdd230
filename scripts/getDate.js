@@ -1,11 +1,9 @@
 function lastUpdated() {
   let currentYear = new Date().getFullYear();
-  document.getElementById("currentyear").textContent = currentYear;
+  document.getElementById("currentYear").textContent = currentYear; // Updated id to "currentYear"
 
   let lastModified = document.lastModified;
-  document.getElementById(
-    "lastmodified"
-  ).textContent = `Last Modified: ${lastModified}`;
+  document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 }
 
 lastUpdated();
