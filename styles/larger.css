@@ -22,10 +22,7 @@
 
   main {
     display: grid;
-    grid-template: min-content max-content / minmax(200px, 800px) minmax(
-        100px,
-        400px
-      );
+    grid-template: min-content max-content / minmax(200px, 800px) minmax(100px, 400px);
     padding: 0rem 1rem;
     gap: 1rem;
     max-width: 60rem;

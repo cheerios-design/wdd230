@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sam Daramroei">
-    <meta
-      name="description"
-      content="WDD 230 - Web Frontend Development Sam Daramroei course assignment portal"
-    >
-    <title>[Sam Daramroei] - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-  </head>
-  <body>
-    <header>
-      <img src="images/sam.png" alt="Sam Daramroei">
-      <h1>Sam Daramroei</h1> <!-- Fixed: Closing h1 tag -->
-    </header>
-    <nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sam Daramroei">
+  <meta name="description" content="WDD 230 - Web Frontend Development Sam Daramroei course assignment portal">
+  <title>[Sam Daramroei] - WDD 230 - Web Frontend Development</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <img src="images/sam.png" alt="Sam Daramroei">
+    <span class="student-name">Sam Daramroei</span>
+  </header>
+  
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="card">
+      <h2>Learning Activities</h2>
       <ul>
-        <li><a href="">Home</a></li> <!-- Fixed: Closing a and li tags -->
-        <li><a href="Week01/chamber-site-plan.html">Chamber</a></li> <!-- Fixed: Closing a and li tags -->
-        <li><a href="">Site Plan</a></li> <!-- Fixed: Closing a and li tags -->
-        <li><a href="">Form</a></li> <!-- Fixed: Closing a and li tags -->
+        <li>Week 01: <a href="week01/holygrail.html">Holy Grail</a></li>
+        <!-- Add more list items as needed -->
       </ul>
-    </nav>
-    <main>
-      <h2>WDD 230: Web Frontend Development</h2> <!-- Fixed: Closing h2 tag -->
-      <section class="card">
-        <h2>Learning Activities</h2> <!-- Fixed: Closing h2 tag -->
-        <ul>
-          <li>Week 01: <a href="week01/holygrail.html">Holy Grail</a></li> <!-- Fixed: Closing a and li tags -->
-          <!-- Add more list items as needed -->
-        </ul>
-      </section>
+    </section>
 
-      <section class="card">
-        <h2>Information</h2> <!-- Fixed: Closing h2 tag -->
-        <p>weather information</p>
-        <p>page visits</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; <span id="currentyear"></span> Sam Daramroei - Turkey</p> <!-- Fixed: Closing span and p tags -->
-      <p id="lastmodified"></p> <!-- Add content to the last modified paragraph if needed -->
-    </footer>
-    <script src="scripts/getDates.js"></script>
-  </body>
+    <section class="card">
+      <h2>Information</h2>
+      <p>Weather information</p>
+      <p>Page visits</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Sam Daramroei - Turkey</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/getDates.js"></script>
+</body>
 </html>
