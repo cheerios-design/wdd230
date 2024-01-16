@@ -34,25 +34,26 @@ nav a {
     text-decoration: none;
     border-radius: 5px;
     width: 100%;
-    margin-bottom: 5px; /* New: Add spacing between links on smaller screens */
-  }
-  
-  nav a:hover::before {
+    margin-bottom: 5px;
+    /* New: Add spacing between links on smaller screens */
+}
+
+nav a:hover::before {
     color: var(--white);
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     transition: 200ms;
     font-weight: 200;
     color: var(--black);
-  }
-  
-  a {
+}
+
+a {
     grid-column: 1 / 4;
     text-decoration: none;
     color: var(--black);
     transition: color 0.3s ease;
-  }
+}
 
 nav ul {
     list-style-type: none;
@@ -70,11 +71,11 @@ h1 {
     color: var(--primary-color);
 }
 
-#site-name ,
-#site-purpose ,
-#scenarios ,
-#color-schema ,
-#typography ,
+#site-name,
+#site-purpose,
+#scenarios,
+#color-schema,
+#typography,
 #wireframe ul li {
     padding: 1rem;
     margin-left: 1rem;
@@ -97,6 +98,11 @@ p {
 
 section {
     padding: 20px;
+}
+
+section#wireframe img {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
