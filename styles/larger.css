@@ -7,6 +7,10 @@
     align-items: center;
   }
 
+  header span.student-name {
+    font-size: 3rem;
+  }
+
   header h1 {
     font-size: 5rem;
     font-weight: 800;
@@ -14,10 +18,25 @@
 
   nav {
     flex-direction: column;
+    display: grid;
+    grid-column: 1/4;
+    background-color: var(--black);
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    height: 80px;
   }
 
   nav ul {
+    display: flex;
     grid-column: 1/4;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
   }
 
   main {
@@ -29,7 +48,7 @@
     margin: 2rem auto;
   }
 
-  main h1{
+  main h1 {
     grid-column: 1 / 4;
     font-size: 3rem;
   }

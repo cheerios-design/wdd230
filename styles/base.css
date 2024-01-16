@@ -37,14 +37,16 @@ header {
   justify-content: center;
 }
 
-span.student-name{
+span.student-name {
   font-family: 'Montserrat', monospace;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-left: 3rem;
   color: var(--white);
 }
 
 header img {
+  height: 125px;
+  width: 125px;
   padding: 0px;
   margin-left: 10px;
   align-content: center;
@@ -66,7 +68,7 @@ main {
   grid-column: 1 / 4;
 }
 
-main h1{
+main h1 {
   color: var(--primary-color);
   font-size: 3rem;
 }
@@ -75,21 +77,22 @@ nav {
   display: grid;
   grid-column: 1/4;
   background-color: var(--black);
-  position: sticky;
+  position: static;
   top: 0;
   padding: 1rem;
   align-items: center;
   align-content: center;
-  justify-content: space-between;
-  height: 80px;
+  justify-content: center;
+  height: 240px;
 }
 
 nav ul {
   display: flex;
+  flex-direction: column;
   align-items: center;
   align-content: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap; /* New: Allow links to wrap to the next line on smaller screens */
+  justify-content: center;
+
 }
 
 nav a {
@@ -102,7 +105,8 @@ nav a {
   text-decoration: none;
   border-radius: 5px;
   width: 100%;
-  margin-bottom: 5px; /* New: Add spacing between links on smaller screens */
+  margin-bottom: 5px;
+  /* New: Add spacing between links on smaller screens */
 }
 
 nav a:hover::before {
