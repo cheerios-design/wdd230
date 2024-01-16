@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Miriam Libre", "Roboto" sans-serif;
+    font-family: "Miriam Libre", "Roboto", sans-serif;
 
     --primary-color: #0066cc;
     --background-color: #f4f4f4;
