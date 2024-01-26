@@ -126,6 +126,17 @@ a {
   transition: color 0.3s ease;
 }
 
+#mode {
+  position: absolute;
+  border-radius: 1rem;
+  padding: 5px;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
 h1 {
   font-size: 1rem;
   color: var(--secondary-color);
