@@ -24,6 +24,17 @@ html {
 
 body {
     margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    box-sizing: border-box;
+    font-family: "Miriam Libre", sans-serif;
+
+    --primary-color: #203864;
+    --secondary-color: #f84c2c;
+    --white: #fefefe;
+    --black: #151515;
 }
 
 /**
