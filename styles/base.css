@@ -180,3 +180,45 @@ footer p {
 #lastModified {
   font-weight: 200;
 }
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1e53;
+    /* Add your preferred background color */
+    position: absolute;
+    top: 60px;
+    /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .nav-links a {
+    color: #fff;
+    /* Add your preferred text color */
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #hamburger-button {
+    display: block;
+    font-size: 24px;
+    /* Adjust size as needed */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Add smooth color transition */
+  }
+
+  #hamburger-button.open {
+    color: #f84c2c;
+    /* Change to your preferred color for the 'X' */
+  }
+}
