@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+    --primary-color: #62ab32;
+    --secondary-color: #081a3a;
+    --accent1: #64cd1d;
+    --accent2: #081a3a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: grid;
+    grid-column: 1/4;
+    background-color: var(--black);
+    position: static;
+    top: 0;
+    padding: 1rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 240px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+nav a {
+    color: var(--accent2);
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    /* New: Add spacing between links on smaller screens */
+}
+
+nav a:hover::before {
+    color: #f3f3f3;
+}
+
+nav a:hover {
+    transition: 200ms;
+    font-weight: 200;
+    color: #f3f3f3;
+}
+
+.section .hero-container {
+    position: relative;
+}
+
+
+span#hero-info {
+    display: inline-block;
+    color: var(--accent2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #f3f3f3;
+    opacity: 80%;
+    padding: 100px 5px 150px 5px;
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -105%);
+    /* border: 2px solid var(--accent1); */
+}
+
+span.cta-button {
+    display: inline-block;
+    padding: 20px 30px 20px 30px;
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(200%, -200%);
+    /* Center both vertically and horizontally */
+    font-family: 'Roboto', sans-serif;
+    color: var(--accent1);
+    background-color: #f3f3f3;
+    border: 3px solid var(--secondary-color);
+    border-radius: 2rem;
+}
+
+span.cta-button:hover {
+    cursor: pointer;
+    background-color: var(--accent2);
+}
