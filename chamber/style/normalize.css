@@ -1,0 +1,217 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav .nav-links-small {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--accent1);
+}
+
+nav .nav-links-small a {
+    color: var(--secondary-color);
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+nav .nav-links-small a:hover {
+    background-color: var(--accent2);
+}
+
+@media screen and (max-width: 45rem) {
+    nav ul {
+        display: none;
+    }
+
+    nav .nav-links-small {
+        display: flex;
+    }
+
+    main {
+        margin-left: 1rem;
+        width: auto;
+    }
+}
+
+/* Button Styles */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+input,
+select {
+    overflow: visible;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/* Other Adjustments */
+main {
+    display: inline-block;
+    align-items: left;
+    align-content: left;
+    justify-content: center;
+    padding: 2rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    width: 50rem;
+}
+
+main h1 {
+    color: var(--accent1);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+main p {
+    color: #fefefe;
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+main button {
+    padding: 20px 30px 20px 30px;
+    background-color: #f3f3f3;
+    border: 3px solid var(--secondary-color);
+    border-radius: 2rem;
+}
+
+main button a {
+    color: var(--accent2);
+    font-size: 1.2rem;
+}
+
+main button:hover {
+    cursor: pointer;
+    background-color: var(--accent1);
+}
+
+/* Discovery and Directory Styles - Adjusted for Larger View */
+.discovery-container,
+.directory-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    width: 80rem;
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(3%, 10%);
+}
+
+.discovery-card,
+.directory-card {
+    display: inline-block;
+    flex-direction: row;
+    gap: 1.6rem;
+}
+
+.discovery-card h2,
+.directory-card h2 {
+    font-size: 1.6rem;
+    color: var(--accent1);
+}
+
+.discovery-card p,
+.directory-card p {
+    font-size: 1rem;
+}
+
+.discovery-card img,
+.directory-card img {
+    scale: 125%;
+    padding: 10px 30px 30px 10px;
+    margin-left: 1rem;
+}
+
+/* Join Us Section Styles - Adjusted for Larger View */
+.join-us {
+    width: 80%;
+    min-height: 30vh;
+    margin-top: 60px;
+    position: absolute;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.left button:hover {
+    background-color: var(--accent2);
+    color: var(--accent1);
+}
