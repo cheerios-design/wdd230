@@ -77,7 +77,8 @@
     }
 
 
-    span#hero-info {
+
+    section#hero-info {
         display: inline-block;
         color: var(--accent2);
         font-family: 'Montserrat', sans-serif;
@@ -93,7 +94,8 @@
         /* border: 2px solid var(--accent1); */
     }
 
-    span#hero-info p {
+
+    section#hero-info p {
         background-color: #f3f3f3;
         font-size: 1.5rem;
         width: 100%;
@@ -218,6 +220,7 @@
         font-size: 1.6rem;
         color: var(--accent1);
         padding: 1rem;
+        text-align: center;
     }
 
     .discovery-card p {
@@ -228,7 +231,7 @@
 
 
     .discovery-card img {
-        scale: 110%;
+        scale: 100%;
         padding: 20px 30px 20px 15px;
         margin-left: 1rem;
     }

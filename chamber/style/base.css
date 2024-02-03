@@ -29,7 +29,7 @@ body {
     position: static;
 }
 
-span#hero-info {
+section#hero-info {
     color: #fefefe;
     position: absolute;
     text-align: left;
@@ -37,7 +37,7 @@ span#hero-info {
     left: 0;
 }
 
-span#hero-info p {
+section#hero-info p {
     font-size: 0.8rem;
     text-align: left;
     padding: 1rem;
