@@ -32,13 +32,22 @@ body {
 span#hero-info {
     color: #fefefe;
     position: absolute;
-    text-align: center;
-    top: 5%;
+    text-align: left;
+    top: 0;
+    left: 0;
+}
+
+span#hero-info p {
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 1rem;
+    width: 17rem;
+    background-color: var(--accent2);
 }
 
 span.cta-button {
     display: inline-block;
-    transform: translate(125%, -150%);
+    transform: translate(250%, -150%);
     color: var(--accent1);
     background-color: #fefefe;
     padding: 10px 20px 10px 20px;
@@ -164,7 +173,7 @@ main button:hover {
     gap: 2rem;
     width: 25rem;
     padding: 2rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-left: -60px;
 }
