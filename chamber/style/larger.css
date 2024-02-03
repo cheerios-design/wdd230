@@ -149,8 +149,8 @@
 
     main {
         display: inline-block;
-        align-items: left;
-        align-content: left;
+        /* align-items: left;
+        align-content: left; */
         justify-content: center;
         padding: 2rem;
         margin-left: 3rem;
@@ -231,7 +231,7 @@
 
 
     .discovery-card img {
-        scale: 100%;
+        /* scale: 100%; */
         padding: 20px 30px 20px 15px;
         margin-left: 1rem;
     }
@@ -254,7 +254,7 @@
     }
 
     .directory-search button {
-        float: center;
+        /* float: center; */
         padding: 6px 10px;
         margin-top: 8px;
         background: #ddd;
@@ -307,7 +307,7 @@
 
 
     .directory-card img {
-        scale: 110%;
+        /* scale: 110%; */
         padding: 20px 30px 20px 15px;
         margin-left: 1rem;
     }

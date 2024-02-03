@@ -98,8 +98,8 @@ button:-moz-focusring,
 /* Other Adjustments */
 main {
     display: inline-block;
-    align-items: left;
-    align-content: left;
+    /* align-items: left; */
+    /* align-content: left; */
     justify-content: center;
     padding: 2rem;
     margin-left: 3rem;
@@ -169,7 +169,7 @@ main button:hover {
 
 .discovery-card img,
 .directory-card img {
-    scale: 125%;
+    /* scale: 125%; */
     padding: 10px 30px 30px 10px;
     margin-left: 1rem;
 }
