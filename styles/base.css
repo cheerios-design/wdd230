@@ -100,13 +100,26 @@ header h1 {
   text-decoration: none;
 }
 
+section.hero-img {
+  position: relative;
+}
+
 section.hero-img picture img {
-  display: flex;
-  flex-direction: column;
-  left: 0;
-  width: auto;
+  display: block;
+  width: 100%;
   height: auto;
-  padding: 2rem;
+}
+
+section.hero-img span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--white);
+  font-size: 4rem;
+  padding: 1rem;
+  background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+  width: 100%;
+
 }
 
 main {
