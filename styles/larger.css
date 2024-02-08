@@ -121,4 +121,8 @@
     margin: 0;
     box-shadow: 2px 2px 10px #a5601163;
   }
+
+  iframe {
+    padding: 1rem;
+  }
 }

@@ -201,6 +201,10 @@ h1 {
   padding: 5px;
 }
 
+iframe {
+  padding: 1rem;
+}
+
 footer {
   background: var(--primary-color);
   color: var(--white);
