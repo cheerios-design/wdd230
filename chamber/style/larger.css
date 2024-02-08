@@ -11,6 +11,11 @@
         --accent2: #081a3a;
     }
 
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
     .hero-container {
         height: 45vh;
     }

@@ -12,6 +12,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -161,6 +162,33 @@ main button a {
 main button:hover {
     cursor: pointer;
     background-color: var(--accent1);
+}
+
+main#discover-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+main .left #districts {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .left #districts h2 {
+    color: var(--accent1);
+}
+
+main .left #districts h2,
+p {
+    padding: 1rem;
+}
+
+main .right {
+    grid-column: 3;
 }
 
 #discovery {
