@@ -93,6 +93,10 @@
 
   }
 
+  header span.student-name {
+    font-size: 5rem;
+  }
+
   main {
     display: grid;
     grid-template: min-content max-content / minmax(200px, 800px) minmax(100px, 400px);
