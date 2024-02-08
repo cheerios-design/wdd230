@@ -24,6 +24,7 @@
         width: 90%;
         min-height: 45vh;
         border: none;
+        margin-left: 4rem;
     }
 
     #hero-info {
@@ -366,6 +367,7 @@
         display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 3rem;
+        margin-left: .5rem;
     }
 
     .main-content {
