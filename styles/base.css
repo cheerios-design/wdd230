@@ -115,7 +115,7 @@ section.hero-img span {
   top: 0;
   left: 0;
   color: var(--white);
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 1rem;
   background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
   width: 100%;
