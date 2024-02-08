@@ -13,10 +13,9 @@
 }
 
 body {
-  display: grid;
   height: 100vh;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto 1fr auto;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -28,9 +27,7 @@ li {
 }
 
 header {
-  grid-column: 1/4;
-  display: flex;
-  padding: 2rem;
+  padding: 1rem;
   background: var(--primary-color);
   align-items: center;
   align-content: center;
@@ -39,8 +36,10 @@ header {
 
 span.student-name {
   font-family: 'Montserrat', monospace;
+  position: absolute;
   font-size: 2rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
   color: var(--white);
 }
 
@@ -64,8 +63,54 @@ header h1 {
   text-align: center;
 }
 
+
+#hamburger-button {
+  display: block;
+  font-size: 24px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#hamburger-button.open {
+  color: #f84c2c;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1e53;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-links a {
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+section.hero-img picture img {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 2rem;
+}
+
 main {
-  grid-column: 1 / 4;
+  padding: 0;
 }
 
 main h1 {
@@ -74,9 +119,7 @@ main h1 {
 }
 
 nav {
-  display: grid;
-  grid-column: 1/4;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   position: static;
   top: 0;
   padding: 1rem;
@@ -95,36 +138,6 @@ nav ul {
 
 }
 
-nav a {
-  color: var(--secondary-color);
-  text-transform: uppercase;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  width: 100%;
-  margin-bottom: 5px;
-  /* New: Add spacing between links on smaller screens */
-}
-
-nav a:hover::before {
-  color: var(--white);
-}
-
-nav a:hover {
-  transition: 200ms;
-  font-weight: 200;
-  color: var(--white);
-}
-
-a {
-  grid-column: 1 / 4;
-  text-decoration: none;
-  color: #1c1e53;
-  transition: color 0.3s ease;
-}
 
 #mode {
   position: absolute;
@@ -132,9 +145,8 @@ a {
   padding: 5px;
   top: 1rem;
   right: 1rem;
-  font-size: 3rem;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 2rem;
 }
 
 h1 {
@@ -181,7 +193,6 @@ footer {
   color: var(--white);
   padding: 2rem;
   text-align: center;
-  grid-column: 1 / 4;
 }
 
 footer p {
@@ -190,46 +201,4 @@ footer p {
 
 #lastModified {
   font-weight: 200;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1c1e53;
-    /* Add your preferred background color */
-    position: absolute;
-    top: 60px;
-    /* Adjust the top position as needed */
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .nav-links a {
-    color: #fff;
-    /* Add your preferred text color */
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  #hamburger-button {
-    display: block;
-    font-size: 24px;
-    /* Adjust size as needed */
-    cursor: pointer;
-    transition: color 0.3s ease;
-    /* Add smooth color transition */
-  }
-
-  #hamburger-button.open {
-    color: #f84c2c;
-    /* Change to your preferred color for the 'X' */
-  }
 }

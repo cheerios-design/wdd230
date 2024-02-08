@@ -1,8 +1,21 @@
 @media screen and (min-width: 45rem) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Miriam Libre", sans-serif;
+
+    --primary-color: #203864;
+    --secondary-color: #f84c2c;
+    --white: #fefefe;
+    --black: #151515;
+  }
+
+
   header img {
     width: 250px;
     height: 250px;
-    margin-left: 6rem;
+    margin-left: 2rem;
     align-content: center;
     align-items: center;
   }
@@ -14,6 +27,23 @@
   header h1 {
     font-size: 5rem;
     font-weight: 800;
+  }
+
+  section.hero-img picture img {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links.open {
+    display: none;
+  }
+
+  #hamburger-button {
+    display: none;
   }
 
   nav {
@@ -37,6 +67,18 @@
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
+  }
+
+  nav ul a {
+    font-size: 2rem;
+  }
+
+  nav ul a:hover {
+    color: var(--secondary-color);
+  }
+
+  nav ul a:active {
+    color: var(--secondary-color);
   }
 
   main {
