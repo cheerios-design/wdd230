@@ -129,7 +129,7 @@
         /* Center both vertically and horizontally */
         font-family: 'Roboto', sans-serif;
         color: var(--accent1);
-        background-color: #f3f3f3;
+        background-color: #151515;
         border: 3px solid var(--secondary-color);
         border-radius: 2rem;
     }
@@ -188,13 +188,13 @@
 
     main button {
         padding: 20px 30px 20px 30px;
-        background-color: #f3f3f3;
+        background-color: var(--accent1);
         border: 3px solid var(--secondary-color);
         border-radius: 2rem;
     }
 
     main button a {
-        color: var(--accent2);
+        color: var(--accent1);
         font-size: 1.2rem;
     }
 
@@ -419,6 +419,7 @@
         font-size: 0.9rem;
         text-align: center;
         padding: 0.5rem 1rem 0.5rem 1rem;
+        color: var(--secondary-color);
     }
 
     .statistics {
@@ -435,6 +436,11 @@
         font-size: 0.9rem;
         text-align: center;
         padding: 0.5rem 1rem 0.5rem 1rem;
+        color: var(--secondary-color);
+    }
+
+    .visitor p {
+        color: #151515;
     }
 
     footer {
@@ -459,7 +465,7 @@
     }
 
     footer .cols .about-col p {
-        color: #ccc;
+        color: #353535;
         font-size: 13px;
     }
 
@@ -469,14 +475,14 @@
 
     footer .cols .links-col h4,
     footer .cols .news-col h4 {
-        color: var(--white-color);
+        color: #353535;
         margin-bottom: 20px;
     }
 
     footer .cols .links-col a {
         display: block;
         text-decoration: none;
-        color: #7b7b7b;
+        color: #151515;
         font-size: 14px;
         line-height: 26px;
         transition: color 0.3s ease;
@@ -491,7 +497,7 @@
     }
 
     footer .cols .news-col p {
-        color: #7b7b7b;
+        color: #151515;
         font-size: 15px;
     }
 

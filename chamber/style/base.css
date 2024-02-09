@@ -152,14 +152,14 @@ main h1 {
 }
 
 main p {
-    color: #fefefe;
+    color: #151515;
     font-size: 15px;
     padding-bottom: 1rem;
 }
 
 main button {
     padding: 10px 15px 10px 15px;
-    background-color: #f3f3f3;
+    background-color: #151515;
     border: 3px solid var(--secondary-color);
     border-radius: 2rem;
 }
@@ -395,7 +395,7 @@ footer .cols .news-col h4 {
 footer .cols .links-col a {
     display: block;
     text-decoration: none;
-    color: #7b7b7b;
+    color: #151515;
     font-size: 14px;
     line-height: 26px;
     transition: color 0.3s ease;
@@ -410,7 +410,7 @@ footer .cols .news-col {
 }
 
 footer .cols .news-col p {
-    color: #7b7b7b;
+    color: #151515;
     font-size: 15px;
 }
 
