@@ -406,8 +406,8 @@ label {
 }
 
 #join-form button {
-    color: var(--accent1);
-    background-color: #151515;
+    color: #151515;
+    background-color: #fefefe;
 }
 
 #join-form button:hover {
