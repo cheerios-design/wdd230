@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+
+:root {
+    --input-background: #fefefe;
+    --form-background: #203864;
+    --submit-color: #f84c2c;
+}
+
 @media screen and (min-width: 45rem) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: "Miriam Libre", sans-serif;
-
-        --input-background: #fefefe;
-        --form-background: #203864;
-        --submit-color: #f84c2c;
     }
 
     form {
