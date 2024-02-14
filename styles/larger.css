@@ -128,47 +128,4 @@
   iframe {
     padding: 1rem;
   }
-
-  /*FORM CSS*/
-
-  form {
-    background-color: var(--form-background);
-    margin: auto;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  input[type=text],
-  input[type=password],
-  input[type=email],
-  input[type=range] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    background-color: var(--input-background);
-  }
-
-  input[type=submit] {
-    background-color: var(--submit-color);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-
-  input[type=submit]:hover {
-    opacity: 0.8;
-  }
-
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    color: var(--white);
-  }
 }

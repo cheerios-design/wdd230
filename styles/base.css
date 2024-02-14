@@ -10,9 +10,9 @@
   --secondary-color: #f84c2c;
   --white: #fefefe;
   --black: #151515;
-  --input-background: #efac3e;
-  --form-background: #f3f3f3;
-  --submit-color: #4CAF50;
+  --input-background: #fefefe;
+  --form-background: #203864;
+  --submit-color: #f84c2c;
 }
 
 body {
@@ -248,6 +248,7 @@ input[type=submit]:hover {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  color: var(--input-background);
 }
 
 footer {
