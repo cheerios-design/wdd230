@@ -461,7 +461,7 @@
 
     #join-form button {
         color: var(--accent1);
-        background-color: #fefefe;
+        background-color: #151515;
     }
 
     #join-form button:hover {
