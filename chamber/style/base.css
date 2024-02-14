@@ -356,6 +356,65 @@ p {
     color: var(--accent1);
 }
 
+/* Style for the form */
+#join-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin: auto;
+}
+
+#join-form div {
+    margin-bottom: 20px;
+}
+
+#join-form label {
+    font-weight: bold;
+}
+
+#join-form input[type="text"],
+#join-form input[type="email"],
+#join-form input[type="tel"],
+#join-form select,
+#join-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#join-form textarea {
+    height: 100px;
+}
+
+
+.membership-benefits {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.membership-benefit {
+    margin-bottom: 10px;
+}
+
+label {
+    color: var(--accent1);
+    padding: 1.2rem 0 1.2rem 0;
+}
+
+#join-form button {
+    color: var(--accent1);
+    background-color: #fefefe;
+}
+
+#join-form button:hover {
+    color: var(--accent2);
+    background-color: var(--accent1);
+}
+
 footer {
     position: relative;
     background: var(--accent1);

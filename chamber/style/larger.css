@@ -443,6 +443,32 @@
         color: #151515;
     }
 
+    /*Form CSS*/
+    #join-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .membership-benefits {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+
+    label {
+        color: var(--accent1);
+        padding: 1.2rem 0 1.2rem 0;
+    }
+
+    #join-form button {
+        color: var(--accent1);
+        background-color: #fefefe;
+    }
+
+    #join-form button:hover {
+        color: var(--accent2);
+        background-color: var(--accent1);
+    }
+
     footer {
         position: relative;
         background: var(--accent1);
