@@ -469,6 +469,14 @@
         background-color: var(--accent1);
     }
 
+    .benefits-description {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        color: #fefefe;
+        background-color: var(--primary-color);
+    }
+
     footer {
         position: relative;
         background: var(--accent1);
