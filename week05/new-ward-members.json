@@ -1,0 +1,44 @@
+{
+    "family_name": "Daramroei",
+    "move_in_date": "2016-08-10",
+    "num_of_people": 7,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "Aso Daramroei",
+        "gender": "Male",
+        "birthdate": "1970-07-12"
+      },
+      {
+        "name": "Goldoneh Daramroei",
+        "gender": "Female",
+        "birthdate": "1978-18-08"
+      },
+      {
+        "name": "Sam Daramroei",
+        "gender": "Male",
+        "birthdate": "2000-12-16"
+      },
+      {
+        "name": "Sara Daramroei",
+        "gender": "Female",
+        "birthdate": "2008-04-05"
+      },
+      {
+        "name": "Rose Daramroei",
+        "gender": "Female",
+        "birthdate": "2011-06-14"
+      },
+      {
+        "name": "Raha Daramroei",
+        "gender": "Male",
+        "birthdate": "2019-09-10"
+      },
+      {
+        "name": "Hannah Daramroei",
+        "gender": "Female",
+        "birthdate": "2020-10-20"
+      }
+    ]
+  }
+  
