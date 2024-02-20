@@ -47,7 +47,7 @@
     <h1>WDD 230: Web Frontend Development</h1>
     <section class="card">
       <h2>Learning Activities</h2>
-      <ul>
+      <ul id="assignment-list">
         <li>Week 01: <a href="week01/holygrail.html">Holy Grail</a></li>
         <li>Week 02: <a href="https://codepen.io/cheerios-design/pen/NWJwPpj">Responsive Navigation</a></li>
         <li>Week 03: <a href="week03/images/landscape.webp">WebP</a>
@@ -60,13 +60,15 @@
         </li>
         <li>Week 05: <a href="https://codepen.io/cheerios-design/pen/KKEEdRL">CSS Pseudo-elements</a> | <a
             href="week05/new-ward-members.json"> New Ward Members (JSON)</a> | <a
-            href="week05/prophets.html">Propehts</a> </li>
+            href="week05/prophets.html">Propehts</a> | <a href="week05/weather.html">Weather Page</a> </li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Information</h2>
-      <p>Weather information</p>
+    <section class="card" id="weathercard">
+      <h2>Weather in Bolu</h2>
+      <p id="current-temp"></p>
+      <img id="weatherIcon" src="" alt="">
+      <figcaption></figcaption>
       <p><span class="label"> Site Visits: </span><span class="visits"></span></p>
     </section>
   </main>
@@ -87,6 +89,8 @@
   <script src="scripts/darkMode.js"></script>
   <script src="scripts/lazyLoad.js"></script>
   <script src="scripts/visitCounter.js"></script>
+  <script src="scripts/links.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 
 </html>
