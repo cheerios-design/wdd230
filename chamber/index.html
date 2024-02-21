@@ -39,13 +39,13 @@
         </section>
 
         <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+            <a id="menu" href="#"></a>
+            <ul class="navbar" id="navbuttons">
+                <li class="navbtn active"><a href="index.html">Home</a></li>
+                <li class="navbtn"><a href="discover.html">Discover</a></li>
+                <li class="navbtn"><a href="directory.html">Directory</a></li>
+                <li class="navbtn"><a href="join.html">Contact</a></li>
             </ul>
-
         </nav>
         <button id="hamburger-button">&#8801;</button>
     </header>
@@ -145,6 +145,21 @@
                 <img src="images/turkey.jpg" alt="join us picture">
             </div>
         </section>
+        <section class="card" id="weathercard">
+            <div id="current-weather">
+                <h2>Weather in Ankara</h2>
+
+            </div>
+            <div id="forecast">
+                <h2>Forecast</h2>
+                <div id="forecastsect">
+                    <section class="forecast" id="day-one"></section>
+                    <section class="forecast" id="day-two"></section>
+                    <section class="forecast" id="day-three"></section>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <footer>
@@ -185,6 +200,7 @@
     <script src="scripts/getDate.js"></script>
     <script src="scripts/responsiveMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+
 </body>
 
 </html>

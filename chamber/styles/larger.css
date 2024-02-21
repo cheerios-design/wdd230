@@ -342,6 +342,35 @@
         border-radius: 5px;
     }
 
+    #weathercard {
+        margin-top: 60rem;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--accent1);
+    }
+
+    #current-weather h2 {
+        color: var(--accent2);
+    }
+
+    #forecast h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .forecast {
+        border: solid 1px var(--accent1);
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #000;
+    }
+
+    #forecastsect {
+        display: flex;
+    }
+
     .right {
         flex: 1;
         display: flex;
