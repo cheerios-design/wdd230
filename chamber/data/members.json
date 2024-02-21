@@ -32,31 +32,29 @@
             "img": "https://www.aymet.com.tr/logo9.png",
             "membership": "Bronze Membership"
         },
-        [
-            {
-                "name": "Simit Sarayı",
-                "address": "Kızılay Mahallesi, Cumhuriyet Caddesi No:7, Çankaya, Ankara",
-                "number": "+90 (312) 452 22 21",
-                "url": "https://www.simitsarayi.com/",
-                "img": "https://simitsarayi01.mncdn.com/assets/img/logo.png",
-                "membership": "Gold Membership"
-            },
-            {
-                "name": "Köfteci Yusuf",
-                "address": "Cemal Gürsel Caddesi, No:95, Kavaklıdere, Ankara",
-                "number": "+90 (312) 437 90 90",
-                "url": "https://www.kofteciyusuf.com/",
-                "img": "https://www.kofteciyusuf.com/assets/dist/img/logo.png",
-                "membership": "Silver Membership"
-            },
-            {
-                "name": "Ankara Palas",
-                "address": "Atatürk Bulvarı No:183, Kızılay, Ankara",
-                "number": "+90 (312) 429 61 00",
-                "url": "http://www.ankarapalas.com.tr/",
-                "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ankara_Palas_Logo.png/220px-Ankara_Palas_Logo.png",
-                "membership": "Gold Membership"
-            }
-        ]
+        {
+            "name": "Simit Sarayı",
+            "address": "Kızılay Mahallesi, Cumhuriyet Caddesi No:7, Çankaya, Ankara",
+            "number": "+90 (312) 452 22 21",
+            "url": "https://www.simitsarayi.com/",
+            "img": "https://simitsarayi01.mncdn.com/assets/img/logo.png",
+            "membership": "Gold Membership"
+        },
+        {
+            "name": "Köfteci Yusuf",
+            "address": "Cemal Gürsel Caddesi, No:95, Kavaklıdere, Ankara",
+            "number": "+90 (312) 437 90 90",
+            "url": "https://www.kofteciyusuf.com/",
+            "img": "https://www.kofteciyusuf.com/assets/dist/img/logo.png",
+            "membership": "Silver Membership"
+        },
+        {
+            "name": "Ankara Palas",
+            "address": "Atatürk Bulvarı No:183, Kızılay, Ankara",
+            "number": "+90 (312) 429 61 00",
+            "url": "http://www.ankarapalas.com.tr/",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ankara_Palas_Logo.png/220px-Ankara_Palas_Logo.png",
+            "membership": "Gold Membership"
+        }
     ]
 }
