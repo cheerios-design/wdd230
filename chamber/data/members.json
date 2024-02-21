@@ -1,0 +1,61 @@
+{
+    "members": [
+        {
+            "name": "Cheerio Studio",
+            "address":" 40.7, 31.5, Bolu, Merkez, Türkiye",
+            "number":"+90 544 696 14 15",
+            "url": "https://cheeriostudios.com/",
+            "img":"https://cheeriostudios.com/assets/meandcheerios.jpg",
+            "membership": "Gold Membership"
+        },
+        {
+            "name": "Pace's Dairy Ann",
+            "address":" 1180 S 500 W #8137, Woods Cross, UT 84010, United States",
+            "number":"+1 801-295-5192",
+            "url": " pacesdairyann.com",
+            "img":"https://pacesdairyann.files.wordpress.com/2015/03/paces-038_cropped.jpg?w=457&h=343",
+            "membership": "Gold Membership"
+        },
+        {
+            "name": "Lakeview Hospital",
+            "address":"630 Medical Dr, Bountiful, UT 84010, United States",
+            "number":"+18012992200",
+            "url": "http://lakeviewhospital.com/?utm_campaign=corp_listings_mgmt&utm_source=google&utm_medium=business_listing",
+            "img":"https://www.mylocalutah.com/wp-content/uploads/2020/07/2019-EB-Lakeview-Hospital-FC.png",
+            "membership": "Silver Membership"
+        },
+        {
+            "name": "Bountiful Ridge Golf Course",
+            "address":"2430 Bountiful Blvd, Bountiful, UT 84010, United States",
+            "number":"+18012986040",
+            "url": "http://bountifulridgegolf.com/",
+            "img":"https://bountifulridgegolf.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-03-at-11.14.56-PM.png",
+            "membership": "Silver Membership"
+        },
+        {
+            "name": "Parsons' Bakery",
+            "address":"535 W 2600 S, Bountiful, UT 84010, United States",
+            "number":"+18012983059",
+            "url": "http://parsonsbakeryutah.com/",
+            "img":"https://parsonsbakeryutah.com/images/logodc.png",
+            "membership": "Bronze Membership"
+        },
+        {
+            "name": "Smokin Bones BBQ",
+            "address":"364 S 200 W, Bountiful, UT 84010, United States",
+            "number":"+18012981687",
+            "url": "http://www.smokinbonesbbqut.com/",
+            "img":"https://www.smokinbonesbbqut.com/img/full-logo-white-drop-shadow.png",
+            "membership": "Bronze Membership"
+        },
+        {
+            "name": "Joy Foundation",
+            "address":"55 N Main St suite c, Bountiful, UT 84010, United States",
+            "number":"+18013495778",
+            "url": "https://kidsfindjoy.org/",
+            "img":"https://kidsfindjoy.org/wp-content/uploads/2019/02/JoyLogoWhite.png",
+            "membership": "Non-Profit Membership"
+        }
+
+    ]
+}
