@@ -1,5 +1,5 @@
 const articleElement = document.querySelector('.members');
-let membersUrl = "https://zchexmix.github.io/wdd230/chamber/data/members.json";
+let membersUrl = "https://cheerios-design.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
     try {
