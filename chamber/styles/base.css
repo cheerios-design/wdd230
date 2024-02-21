@@ -415,6 +415,99 @@ label {
     background-color: var(--accent1);
 }
 
+/* -- Directory CSS -- */
+#body-directory {
+    background-color: #bcbcbc;
+}
+
+#directory-main {
+    display: block;
+    padding-bottom: 40px;
+    background-color: #bcbcbc;
+
+}
+
+.directory-menu button {
+    padding: 1rem;
+    font-weight: 700;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #dfdede;
+}
+
+.directory-menu button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.directory-menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: skyblue;
+    text-align: center;
+    width: 20rem;
+    border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+
+}
+
+.grid section {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #000;
+    max-height: 300px;
+}
+
+.grid img {
+    height: 70px;
+    width: auto;
+}
+
+.grid #biz-name {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    border: .5px solid #000;
+}
+
+.list section img {
+    width: auto;
+    height: 50px;
+    margin: auto;
+}
+
+#biz-name {
+    text-align: left;
+}
+
+.list #address,
+.list #number {
+    display: none;
+}
+
+.list #biz-site {
+    margin: 0 auto;
+}
+
 footer {
     position: relative;
     background: var(--accent1);
