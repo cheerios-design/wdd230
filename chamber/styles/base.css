@@ -266,10 +266,17 @@ main#directory-main {
 }
 
 main#directory-main section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 23rem;
+    height: 23rem;
     background-color: var(--accent1);
 }
 
-.members .grid {
+main#directory-main .grid {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -280,25 +287,24 @@ main#directory-main section {
 }
 
 
-.members .grid section img {
-    width: 75px;
+main#directory-main .grid section img {
+    width: 100px;
     height: auto;
-    display: block;
     margin-left: 35%;
 }
 
 main#directory-main .grid section h4,
 p {
-    color: #fefefe;
+    color: var(--accent2);
     padding: 0.2rem;
     text-align: center;
-    background-color: var(--accent1);
+
 }
 
-main#directory-main section a {
+main#directory-main .grid section a {
     text-align: center;
     margin-left: 5rem;
-    color: #fefefe;
+    color: var(--accent2);
 }
 
 main#directory-main .list {
@@ -309,6 +315,18 @@ main#directory-main .list {
     justify-items: center;
     align-items: center;
     align-content: center;
+}
+
+main#directory-main .list section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 25rem;
+    height: 10rem;
+    background-color: var(--accent1);
 }
 
 
@@ -324,13 +342,12 @@ p {
     color: #fefefe;
     padding: 0.2rem;
     text-align: center;
-    background-color: var(--accent1);
+
 }
 
-main#directory-main section a {
+main#directory-main .list section a {
     text-align: center;
-    margin-left: 5rem;
-    color: #fefefe;
+    color: var(--accent2);
 }
 
 .join-us {

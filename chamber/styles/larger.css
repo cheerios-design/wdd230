@@ -270,55 +270,60 @@
         width: 80%;
     }
 
-    main#directory-main section {
-        background-color: var(--accent1);
+    main#directory-main .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 
-    .members .grid {
+    main#directory-main section {
+        padding: 1rem;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-items: center;
+        justify-content: center;
         align-content: center;
+        width: 30rem;
+        height: 30rem;
     }
 
-
-    .members .grid section img {
-        width: 75px;
+    main#directory-main section img {
+        width: 150px;
         height: auto;
-        display: block;
+        display: flex;
         margin-left: 35%;
     }
 
-    main#directory-main .grid section h4,
-    p {
-        color: #fefefe;
-        padding: 0.2rem;
+    main#directory-main section h4,
+    p .grid {
+        padding: 0.5rem;
         text-align: center;
-        background-color: var(--accent1);
     }
 
     main#directory-main section a {
         text-align: center;
         margin-left: 5rem;
-        color: #fefefe;
+    }
+
+    main#directory-main .list section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 40rem;
+        height: 10rem;
     }
 
     main#directory-main .list {
         display: flex;
         flex-direction: column;
         width: 100%;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
     }
 
 
     main#directory-main .list section img {
-        width: 75px;
+        width: 100px;
         height: auto;
         display: block;
         margin-left: 0%;
@@ -326,16 +331,13 @@
 
     main#directory-main .list section h4,
     p {
-        color: #fefefe;
         padding: 0.2rem;
         text-align: center;
-        background-color: var(--accent1);
     }
 
     main#directory-main section a {
         text-align: center;
         margin-left: 5rem;
-        color: #fefefe;
     }
 
     .join-us {
