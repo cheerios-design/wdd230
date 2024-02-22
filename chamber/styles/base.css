@@ -260,6 +260,40 @@ p {
     background-color: var(--accent1);
 }
 
+/* Spotlight Advertisements */
+#spotlight-container {
+    display: flex;
+    width: fit-content;
+    background-color: var(--accent1);
+}
+
+.spotlight-ad {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.spotlight-ad h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.spotlight-ad img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.spotlight-ad p {
+    margin-bottom: 10px;
+}
+
+.spotlight-ad a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 article {
     background-color: var(--accent2);
 }

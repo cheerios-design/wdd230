@@ -1,59 +1,38 @@
-// spotlight.js
-
-// Function to filter members with silver or gold membership levels
-function filterMembers(members) {
-    return members.filter(member => member.membership.toLowerCase().includes('silver') || member.membership.toLowerCase().includes('gold'));
-}
-
-// Function to randomly select two or three members
-function selectRandomMembers(filteredMembers) {
-    const selectedMembers = [];
-
-    while (selectedMembers.length < 2 && filteredMembers.length > 0) {
-        const randomIndex = Math.floor(Math.random() * filteredMembers.length);
-        selectedMembers.push(filteredMembers.splice(randomIndex, 1)[0]);
-    }
-
-    return selectedMembers;
-}
-
-// Function to display spotlight advertisements
-function displaySpotlightAdvertisements() {
-    // Fetch members data from members.json file
+document.addEventListener('DOMContentLoaded', function () {
+    // Fetch data from members.json file
     fetch('members.json')
         .then(response => response.json())
         .then(data => {
-            const filteredMembers = filterMembers(data.members);
-            const selectedMembers = selectRandomMembers(filteredMembers);
-            const spotlightContainer = document.getElementById('spotlight-container');
+            // Filter members with Gold or Silver membership
+            const qualifiedMembers = data.members.filter(member => {
+                return member.membership === "Gold Membership" || member.membership === "Silver Membership";
+            });
 
-            selectedMembers.forEach(member => {
-                const memberDiv = document.createElement('div');
-                memberDiv.classList.add('spotlight-ad');
+            // Shuffle qualified members
+            shuffleArray(qualifiedMembers);
 
-                const memberName = document.createElement('h2');
-                memberName.textContent = member.name;
-                memberDiv.appendChild(memberName);
-
-                const memberImg = document.createElement('img');
-                memberImg.src = member.img;
-                memberImg.alt = member.name;
-                memberDiv.appendChild(memberImg);
-
-                const memberAddress = document.createElement('p');
-                memberAddress.textContent = member.address;
-                memberDiv.appendChild(memberAddress);
-
-                const memberUrl = document.createElement('a');
-                memberUrl.href = member.url;
-                memberUrl.textContent = 'Visit Website';
-                memberDiv.appendChild(memberUrl);
-
-                spotlightContainer.appendChild(memberDiv);
+            // Display spotlight advertisements
+            const spotlightContainer = document.querySelector('#spotlight-container');
+            qualifiedMembers.slice(0, 3).forEach(member => {
+                const ad = document.createElement('div');
+                ad.classList.add('spotlight-ad');
+                ad.innerHTML = `
+                    <h2>${member.name}</h2>
+                    <img src="${member.img}" alt="${member.name}">
+                    <p>Address: ${member.address}</p>
+                    <p>Phone Number: ${member.number}</p>
+                    <a href="${member.url}" target="_blank">Visit Website</a>
+                `;
+                spotlightContainer.appendChild(ad);
             });
         })
-        .catch(error => console.error('Error fetching members data:', error));
-}
+        .catch(error => console.error('Error fetching data:', error));
 
-// Display spotlight advertisements when the page loads
-window.onload = displaySpotlightAdvertisements;
+    // Function to shuffle array
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+});
