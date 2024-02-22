@@ -212,6 +212,52 @@
         margin-left: 1rem;
     }
 
+    .directory-search input {
+        padding: 0.5rem;
+        border-radius: 2rem;
+        width: 50%;
+    }
+
+    .directory-search {
+        margin-bottom: 5rem;
+    }
+
+    section.directory-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section.join-us {
+        width: 80%;
+        min-height: 30vh;
+        margin-top: 30rem;
+        position: absolute;
+        transform: translate(5%, 0%);
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+        border-radius: 5px;
+    }
+
+    section.card {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        background-color: var(--accent1);
+        transform: translate(10px, 800px);
+    }
+
+    section#forecastsect {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     article {
         background-color: var(--accent2);
     }
@@ -291,25 +337,13 @@
         margin-left: 5rem;
     }
 
-    .join-us {
-        width: 80%;
-        min-height: 30vh;
-        margin-top: 120px;
-        position: absolute;
-        transform: translate(5%, 0%);
-        background-color: var(--primary-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 40px;
-        border-radius: 5px;
-    }
 
     #weathercard {
-        margin-top: 60rem;
+        margin-top: 30rem;
         display: flex;
         flex-direction: row;
         background-color: var(--accent1);
+        width: 60rem;
     }
 
     #current-weather h2 {
@@ -319,6 +353,11 @@
     #forecast h2 {
         text-align: center;
         width: 100%;
+    }
+
+    #forecast p {
+        color: var(--accent2);
+        font-size: 1rem;
     }
 
     .forecast {
@@ -332,6 +371,7 @@
 
     #forecastsect {
         display: flex;
+        flex-direction: row;
     }
 
     .right {
@@ -556,10 +596,11 @@
     }
 
     footer {
-        position: relative;
+        position: absolute;
+        width: 100%;
         background: var(--accent1);
         padding: 80px 50px 40px;
-        margin-top: 50rem;
+        margin-top: 70rem;
     }
 
     footer .cols {

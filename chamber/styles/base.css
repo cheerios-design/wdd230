@@ -137,7 +137,8 @@ section.directory-container img {
 section.directory-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
+    height: fit-content;
 }
 
 section.directory-card {
@@ -158,6 +159,23 @@ section.left button {
 section.right img {
     width: 120px;
     height: auto;
+}
+
+section.card {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 100%;
+}
+
+section#forecastsect {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+section#forecastsect p {
+    color: var(--accent2);
 }
 
 
@@ -352,6 +370,43 @@ main#directory-main .list section a {
     border-radius: 5px;
 }
 
+#weathercard {
+    margin-top: 50rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent1);
+    width: 20rem;
+    justify-content: center;
+}
+
+#current-weather h2 {
+    color: var(--accent2);
+}
+
+#forecast h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#forecast p {
+    color: var(--accent2);
+    font-size: 1rem;
+}
+
+.forecast {
+    border: solid 1px var(--accent1);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+#forecastsect {
+    display: flex;
+    flex-direction: column;
+}
+
 .right {
     flex: 1;
     display: flex;
@@ -537,6 +592,7 @@ footer {
     background: var(--accent1);
     padding: 80px 50px 40px;
     margin-top: 50rem;
+    height: fit-content;
 }
 
 footer .cols {
