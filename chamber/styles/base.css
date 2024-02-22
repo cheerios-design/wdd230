@@ -73,42 +73,6 @@ span.cta-button:hover {
     border: solid 2px;
 }
 
-.navbar {
-    display: block;
-    list-style: none;
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-    font-size: 1.2rem;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    /* color: #2E6171; */
-    background-color: var(--accent1);
-    /* border-radius: 10px; */
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-    text-decoration-color: #7CAE7A;
-    text-shadow: 0 0 5px #2E6171;
-}
-
-.active {
-    text-decoration: underline;
-
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fefefe;
-}
-
-.navbar li {
-    /* width: 80%; */
-    display: none;
-    padding: 25px;
-    margin: auto;
-}
 
 
 main {
@@ -196,25 +160,6 @@ section.right img {
     height: auto;
 }
 
-#menu {
-    position: absolute;
-    font-size: 2rem;
-    padding: .3rem;
-    text-decoration: none;
-}
-
-#menu::before {
-    content: '⁝';
-}
-
-#menu.show::before {
-    content: '…';
-}
-
-.show li {
-    display: block;
-    padding: 20px;
-}
 
 /*-- Discover Page--*/
 

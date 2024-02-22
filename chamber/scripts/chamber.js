@@ -22,14 +22,14 @@ document.getElementById("footer").innerHTML = `&copy; ${year} | Sam Daramroei | 
 
 
 
-// ------ Hamburger Menu Button ----- //
-const nav = document.querySelector('.navbar');
-const hambutton = document.querySelector('#menu');
+// Hamburger Menu Button
+const navLinks = document.querySelector('.nav-links');
+const hamburgerButton = document.getElementById('hamburger-button');
 
-hambutton.addEventListener('click', () => {
-    nav.classList.toggle('show');
-    hambutton.classList.toggle('show');
+hamburgerButton.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
 });
+
 
 
 const visits = document.querySelector('.visits');

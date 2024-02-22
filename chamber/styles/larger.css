@@ -26,8 +26,18 @@
     }
 
 
-    .hero-container {
-        height: 45vh;
+    section.hero .hero-container {
+        display: flex;
+        height: fit-content;
+        width: 100%;
+    }
+
+    section.hero section#hero-info {
+        display: flex;
+        margin-right: 0px;
+        margin-top: 4%;
+        width: 44%;
+        justify-content: center;
     }
 
     .hero .hero-container img {
@@ -37,28 +47,9 @@
         margin-left: 4rem;
     }
 
-    #hero-info {
-        margin-right: 0px;
-        width: 50%;
-    }
-
-    .navbar {
-        display: flex;
-    }
-
-    .navbar li {
-        display: block;
-    }
-
-    #menu {
-        display: none;
-    }
-
     .section .hero-container {
         position: relative;
     }
-
-
 
     section#hero-info {
         display: inline-block;
@@ -79,6 +70,7 @@
 
     section#hero-info p {
         background-color: #f3f3f3;
+        color: var(--accent2);
         font-size: 1.5rem;
         width: 100%;
     }
@@ -87,8 +79,7 @@
         display: inline-block;
         padding: 20px 30px 20px 30px;
         position: absolute;
-        top: 50%;
-        /* Center vertically */
+        top: 60%;
         left: 50%;
         /* Center horizontally */
         transform: translate(200%, -200%);
@@ -106,27 +97,30 @@
     }
 
     nav {
-        flex-direction: column;
-        display: grid;
-        grid-column: 1/4;
-        background-color: var(--accent1);
-        position: sticky;
-        top: 0;
-        padding: 1rem;
-        align-items: center;
-        align-content: center;
-        justify-content: space-between;
-        height: 80px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--primary-color);
+        text-decoration: none;
+        justify-content: center;
     }
 
-
-    nav ul {
+    nav ul.nav-links {
         display: flex;
-        grid-column: 1/4;
+        gap: 15rem;
         flex-direction: row;
-        align-items: center;
-        align-content: center;
-        justify-content: space-evenly;
+        padding: 2rem;
+    }
+
+    nav ul.nav-links li {
+        padding: 1rem;
+        list-style: none;
+    }
+
+    nav ul.nav-links li a {
+        font-size: 1.3rem;
+        color: var(--accent2);
+        text-decoration: none;
     }
 
     main {
@@ -217,15 +211,6 @@
         padding: 20px 30px 20px 15px;
         margin-left: 1rem;
     }
-
-    /* #directory-main .directory-menu {
-        background-color: var(--accent2);
-    }
-
-    #directory-main .directory-menu #grid,
-    #list {
-        background-color: var(--accent1);
-    } */
 
     article {
         background-color: var(--accent2);
