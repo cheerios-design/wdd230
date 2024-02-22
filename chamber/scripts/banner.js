@@ -1,11 +1,10 @@
-const bannerDiv = document.querySelector('#bannerdiv')
+const nav = document.querySelector('banner-container');
 
 function isBannerDay() {
     const today = new Date();
-    const dayOfWeek = today.getDay(); 
-    return dayOfWeek >= 1 && dayOfWeek <= 3; 
+    const dayOfWeek = today.getDay();
+    return dayOfWeek >= 1 && dayOfWeek <= 3;
 }
-
 
 function displayBanner() {
     if (isBannerDay()) {
@@ -15,18 +14,19 @@ function displayBanner() {
         const banner = document.createElement('div');
         banner.id = 'banner';
         banner.innerHTML = `
-            <p>❗️ Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.❗️  <button id="close-banner">❌</button></p>
-            
+            <p>❗️ Watch the highlights of our President's conference on Wednesday at 7:00 p.m. ❗️ <button id="close-banner">❌</button></p>
         `;
-        banner.style.backgroundColor = "#081a3a";
+        banner.style.backgroundColor = "#62ab32";
         banner.style.padding = "2rem";
         banner.style.textAlign = "center";
-        banner.style.position = "absolute";
-        banner.style.top = '100px';
-        
+        banner.style.position = "relative";
+        banner.style.top = '150px';
+        banner.style.height = '150px';
+        banner.style.display = 'flex'
+        banner.style.flexDirection = 'row'
 
         bannerContainer.appendChild(banner);
-        document.body.appendChild(bannerContainer);
+        document.body.insertBefore(bannerContainer, nav.nextSibling);
 
         // Event listener to close the banner
         const closeButton = document.getElementById('close-banner');
@@ -35,6 +35,5 @@ function displayBanner() {
         });
     }
 }
-// console.log('Hello Worlddddddddd');
 
 window.onload = displayBanner;
