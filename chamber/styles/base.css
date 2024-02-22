@@ -52,13 +52,14 @@ section#hero-info p {
     font-size: 0.8rem;
     text-align: left;
     padding: 1rem;
-    width: 17rem;
-    background-color: var(--accent2);
+    height: 10rem;
+    width: 15rem;
+    background-color: var(--accent1);
 }
 
 span.cta-button {
     display: inline-block;
-    transform: translate(250%, -150%);
+    transform: translate(280%, -250%);
     color: var(--accent1);
     background-color: #fefefe;
     padding: 10px 20px 10px 20px;
@@ -72,60 +73,41 @@ span.cta-button:hover {
     border: solid 2px;
 }
 
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-/*
-nav {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--accent1);
-    position: static;
-    top: 0;
-    padding: 1rem;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    height: 240px;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-}
-
-nav a {
-    color: var(--accent2);
-    text-transform: uppercase;
+.navbar {
     display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    border-radius: 5px;
+    list-style: none;
     width: 100%;
-    margin-bottom: 5px;
+    padding: 20px;
+    margin: auto;
+    font-size: 1.2rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    /* color: #2E6171; */
+    background-color: var(--accent1);
+    /* border-radius: 10px; */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #7CAE7A;
+    text-shadow: 0 0 5px #2E6171;
+}
+
+.active {
+    text-decoration: underline;
 
 }
 
-nav a:hover::before {
-    color: #f3f3f3;
+.navbar a {
+    text-decoration: none;
+    color: #fefefe;
 }
-*/
-nav a:hover {
-    transition: 200ms;
-    font-weight: 200;
-    color: var(--accent2);
+
+.navbar li {
+    /* width: 80%; */
+    display: none;
+    padding: 25px;
+    margin: auto;
 }
 
 
@@ -140,8 +122,11 @@ main {
     width: 25rem;
 }
 
-main button.learn-more a {
+main button.learn-more {
     font-size: 1rem;
+    color: #fefefe;
+    border: 1px solid var(--accent1);
+    background-color: var(--primary-color);
 }
 
 main h1 {
@@ -152,14 +137,15 @@ main h1 {
 }
 
 main p {
-    color: #151515;
+    color: #fefefe;
     font-size: 15px;
     padding-bottom: 1rem;
+    text-align: left;
 }
 
 main button {
     padding: 10px 15px 10px 15px;
-    background-color: #151515;
+    background-color: #fefefe;
     border: 3px solid var(--secondary-color);
     border-radius: 2rem;
 }
@@ -172,6 +158,62 @@ main button a {
 main button:hover {
     cursor: pointer;
     background-color: var(--accent1);
+}
+
+#directory,
+#directory-search {
+    margin-top: 15rem;
+}
+
+section.directory-container img {
+    background-color: #fefefe;
+    padding: 1rem;
+}
+
+section.directory-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.directory-card {
+    display: flex;
+    flex-direction: column;
+}
+
+section.join-us {
+    margin-top: 15rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+section.left button {
+    padding: 2rem;
+}
+
+section.right img {
+    width: 120px;
+    height: auto;
+}
+
+#menu {
+    position: absolute;
+    font-size: 2rem;
+    padding: .3rem;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: '⁝';
+}
+
+#menu.show::before {
+    content: '…';
+}
+
+.show li {
+    display: block;
+    padding: 20px;
 }
 
 /*-- Discover Page--*/
@@ -554,6 +596,8 @@ footer {
 
 footer .cols {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: start;
 }
 
@@ -568,7 +612,7 @@ footer .cols .about-col h3 {
 
 footer .cols .about-col p {
     color: #ccc;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 footer .cols .links-col {
@@ -600,7 +644,7 @@ footer .cols .news-col {
 
 footer .cols .news-col p {
     color: #151515;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 footer .cols .news-col form {
@@ -621,6 +665,7 @@ footer .cols .news-col form input {
 
 footer .cols .news-col form button {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 45px;
@@ -648,7 +693,7 @@ footer .cols .news-col form button i {
     font-weight: 200;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .nav-links {
         display: none;
     }
@@ -681,4 +726,4 @@ footer .cols .news-col form button i {
         transition: color 0.3s ease;
     }
 
-}
+} */

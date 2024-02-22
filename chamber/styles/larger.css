@@ -42,50 +42,16 @@
         width: 50%;
     }
 
-    nav {
-        display: grid;
-        grid-column: 1/4;
-        background-color: var(--black);
-        position: static;
-        top: 0;
-        padding: 1rem;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        height: 240px;
-    }
-
-    nav ul {
+    .navbar {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-
     }
 
-    nav a {
-        color: var(--accent2);
-        text-transform: uppercase;
+    .navbar li {
         display: block;
-        margin: 0 auto;
-        text-align: center;
-        padding: 1rem;
-        text-decoration: none;
-        border-radius: 5px;
-        width: 100%;
-        margin-bottom: 5px;
-        /* New: Add spacing between links on smaller screens */
     }
 
-    nav a:hover::before {
-        color: #f3f3f3;
-    }
-
-    nav a:hover {
-        transition: 200ms;
-        font-weight: 200;
-        color: #f3f3f3;
+    #menu {
+        display: none;
     }
 
     .section .hero-container {
