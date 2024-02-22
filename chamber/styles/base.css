@@ -260,6 +260,15 @@ article {
     background-color: var(--accent2);
 }
 
+main#directory-main {
+    background-color: var(--accent2);
+    width: 80%;
+}
+
+main#directory-main section {
+    background-color: var(--accent1);
+}
+
 .members .grid {
     display: flex;
     flex-direction: column;
@@ -274,22 +283,54 @@ article {
 .members .grid section img {
     width: 75px;
     height: auto;
-    background-color: var(--accent1);
     display: block;
     margin-left: 35%;
 }
 
-.members .grid section h4,
+main#directory-main .grid section h4,
 p {
-    color: var(--accent2);
+    color: #fefefe;
     padding: 0.2rem;
     text-align: center;
     background-color: var(--accent1);
 }
 
-.members .grid section a {
+main#directory-main section a {
     text-align: center;
-    padding: 4rem;
+    margin-left: 5rem;
+    color: #fefefe;
+}
+
+main#directory-main .list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+main#directory-main .list section img {
+    width: 75px;
+    height: auto;
+    display: block;
+    margin-left: 0%;
+}
+
+main#directory-main .list section h4,
+p {
+    color: #fefefe;
+    padding: 0.2rem;
+    text-align: center;
+    background-color: var(--accent1);
+}
+
+main#directory-main section a {
+    text-align: center;
+    margin-left: 5rem;
+    color: #fefefe;
 }
 
 .join-us {
